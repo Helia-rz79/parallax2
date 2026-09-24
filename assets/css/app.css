@@ -44,3 +44,13 @@ html {
 [class*=" icon-"]::before {
     margin: 0;
 }
+
+.can-arrow {
+    z-index: 30;
+    color: #fff;
+    background-color: var(--arrow, #111);
+}
+
+.can-arrow::before {
+    content: none;
+}
