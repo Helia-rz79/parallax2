@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+    --font-sans: "Archivo", sans-serif;
+    --animate-hero: hero-fade 8s ease-in-out infinite;
+    --animate-marquee: marquee 22s linear infinite;
+
+    @keyframes hero-fade {
+        0%,
+        42% {
+            opacity: 1;
+        }
+        58%,
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @keyframes marquee {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-50%);
+        }
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .feature img {
+        transform: scale(0.16);
+    }
+
+    .feature figcaption {
+        opacity: 0;
+    }
+}
+
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
+    margin: 0;
+}

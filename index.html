@@ -4,277 +4,242 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Mate Libre — yerba mate infusions. The ideal dose of nature.">
+    <title>Mate Libre — The ideal dose of nature</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/master.css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/fontello/css/fontello.css">
+    <link rel="stylesheet" href="assets/css/master.css">
 </head>
 
-<body>
-    <main>
-        <section id="first">
-            <div class="imag">
-                <img src="assets/img/hero-home-01.jpg" alt="">
-                <img src="assets/img/Watermelon-6.jpg" alt="">
+<body class="bg-white font-sans text-[#161616] antialiased">
+    <a class="sr-only focus:not-sr-only focus:absolute focus:left-3 focus:top-3 focus:z-[80] focus:rounded-full focus:bg-white focus:px-4 focus:py-2 focus:text-black" href="#products">Skip to content</a>
+    <main id="top" class="relative">
+        <section class="hero sticky top-0 z-0 h-svh text-white" id="first" aria-label="Introduction">
+            <div class="hero-media absolute inset-0 origin-center overflow-hidden">
+                <img class="absolute inset-0 h-full w-full object-cover motion-safe:animate-hero" src="assets/img/hero-home-01.jpg" alt="Friends sharing yerba mate outdoors" fetchpriority="high">
+                <img class="absolute inset-0 h-full w-full object-cover motion-safe:animate-hero motion-safe:[animation-direction:reverse] motion-reduce:hidden" src="assets/img/Watermelon-6.jpg" alt="" aria-hidden="true">
             </div>
-            <header class="row">
-                <h4>mate <br>&nbsp;&nbsp;&nbsp; libre</h4>
-                <ul class="row center">
-                    <li>products</li>
-                    <li>explore</li>
-                    <li>community</li>
-                </ul>
-                <p>build your box</p>
-                <a href="">FR</a>
-                <div class="row">
-                    <span class="icon-user-o"></span>
-                    <span class="icon-bag"></span>
+            <div class="pointer-events-none absolute inset-0 bg-black/30"></div>
+            <header class="site-header absolute inset-x-0 top-0 z-30 flex items-center gap-3 px-4 py-3.5 [text-shadow:0_1px_6px_rgba(0,0,0,0.45)] sm:gap-4 sm:px-6 lg:px-9">
+                <a class="relative z-50 shrink-0 text-[1.7rem] font-bold leading-[0.86] tracking-tight text-white" href="#top">mate<br><span class="inline-block pl-4">libre</span></a>
+                <nav class="hidden max-lg:fixed max-lg:inset-0 max-lg:z-40 max-lg:flex-col max-lg:items-start max-lg:justify-center max-lg:gap-8 max-lg:bg-zinc-950/95 max-lg:px-8 lg:ml-4 lg:flex lg:flex-row lg:items-center lg:gap-7 lg:bg-transparent lg:p-0" id="nav" aria-label="Primary">
+                    <a class="text-4xl font-semibold capitalize text-white lg:text-lg lg:hover:underline" href="#products">products</a>
+                    <a class="text-4xl font-semibold capitalize text-white lg:text-lg lg:hover:underline" href="#explore">explore</a>
+                    <a class="text-4xl font-semibold capitalize text-white lg:text-lg lg:hover:underline" href="#community">community</a>
+                </nav>
+                <a class="ml-auto hidden text-lg font-semibold capitalize text-white lg:inline" href="#products">build your box</a>
+                <button class="hidden bg-transparent px-2 text-lg font-semibold text-white lg:inline" type="button">FR</button>
+                <div class="relative z-50 ml-auto flex items-center gap-2 lg:ml-0">
+                    <button class="hidden size-10 items-center justify-center rounded-full border-0 bg-white/20 text-lg text-white lg:inline-flex" type="button" aria-label="Account">
+                        <span class="icon-user-o"></span>
+                    </button>
+                    <button class="hidden size-10 items-center justify-center rounded-full border-0 bg-white/20 text-lg text-white lg:inline-flex" type="button" aria-label="Bag">
+                        <span class="icon-bag"></span>
+                    </button>
+                    <button class="menu-toggle group inline-flex size-10 items-center justify-center rounded-full border-0 bg-white/20 text-lg text-white lg:hidden" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+                        <span class="icon-menu group-aria-expanded:hidden"></span>
+                        <span class="hidden text-3xl leading-none group-aria-expanded:block" aria-hidden="true">×</span>
+                    </button>
                 </div>
             </header>
-            <div>
-                <h1>The ideal <br>dose</h1>
-                <h2>of nature</h2>
-                <a class="center" href="">Build your box</a>
+            <div class="absolute inset-x-4 bottom-8 z-10 max-w-2xl sm:inset-x-8 lg:inset-x-16 lg:bottom-16">
+                <h1 class="text-[clamp(3.15rem,11vw,5.6rem)] font-semibold leading-[0.88] tracking-[-0.04em] text-zinc-200">The ideal <br>dose</h1>
+                <p class="mb-4 text-[clamp(3.15rem,11vw,5.6rem)] font-semibold leading-[0.88] tracking-[-0.04em] text-white">of nature</p>
+                <a class="inline-flex min-h-[52px] items-center justify-center rounded-full bg-white px-6 text-lg font-semibold text-black transition-colors hover:bg-black hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white" href="#products">Build your box</a>
             </div>
         </section>
-        <section id="second">
-            <h3>Discover our most popular<br> yerba mate infusions</h3>
-            <section id="box">
-                <div>
-                    <h2>Watermelon</h2>
-                    <b>sugarfree</b>
-                    <img src="assets/img/Watermelon-Illustration-2.png" alt="">
-                    <img src="assets/img/mate-libre-watermelon-sugarfree.png" alt="">
-                    <p>A crisp juicv flavour that will transport you to a sun-kissed garden. Freshness in every sip!</p>
-                    <a class="icon-right" href=""></a>
-                </div>
-                <div>
-                    <h2>Watermelon</h2>
-                    <img src="assets/img/Tile-Passion-Illustration.png" alt="">
-                    <img src="assets/img/matelibre-can-passion_3d360783-e47a-4235-bc35-ab260a9a362a.png" alt="">
-                    <p>A crisp juicv flavour that will transport you to a sun-kissed garden. Freshness in every sip!</p>
-                    <a class="icon-right" href=""></a>
-                </div>
-                <div>
-                    <h2>Watermelon</h2>
-                    <img src="assets/img/Tile-Menthe_lime-Illustration.png" alt="">
-                    <img src="assets/img/matelibre-can-menthe-lime_910b0663-93f8-40f2-b896-05345d5ad832.png" alt="">
-                    <p>A crisp juicv flavour that will transport you to a sun-kissed garden. Freshness in every sip!</p>
-                    <a class="icon-right" href=""></a>
-                </div>
-            </section>
-            <div class="titr">
-                <span>energy infusions</span>
-                <span>60 mg of caffeine</span>
-                <span>awakens the mind</span>
-                <span>no crash</span>
+
+        <section class="sheet relative z-10 bg-white" id="second">
+            <h2 class="px-4 pt-12 text-2xl font-semibold tracking-tight text-balance sm:px-8 sm:pt-20 sm:text-3xl lg:px-16">Discover our most popular<br> yerba mate infusions</h2>
+            <div class="overflow-hidden" id="products-viewport">
+            <div class="grid grid-cols-1 gap-4 px-4 pt-7 md:grid-cols-2 lg:grid-cols-3 lg:gap-6 lg:px-10" id="products">
+                <article class="group relative flex min-w-0 flex-col overflow-hidden rounded-[2rem] bg-[#ff9ea3] p-6 pb-20 text-[#7a1c1c]">
+                    <h3 class="relative z-10 text-3xl font-semibold tracking-tight xl:text-4xl">Watermelon</h3>
+                    <b class="relative z-10 mt-3 inline-flex w-fit items-center rounded-full border border-current px-3 py-1 text-sm">sugarfree</b>
+                    <img class="pointer-events-none absolute bottom-0 left-0 h-2/3 w-1/2 object-cover opacity-0 transition-opacity group-hover:opacity-100 max-xl:hidden" src="assets/img/Watermelon-Illustration-2.png" alt="">
+                    <p class="relative z-10 mt-4 max-w-[36ch] text-lg font-semibold">A crisp juicy flavour that will transport you to a sun-kissed garden. Freshness in every sip!</p>
+                    <img class="relative z-10 mt-4 h-52 w-40 object-contain" src="assets/img/mate-libre-watermelon-sugarfree.png" alt="Watermelon sugarfree can">
+                    <a class="icon-right absolute right-4 bottom-4 z-10 inline-flex size-11 items-center justify-center rounded-full bg-[#6f1515] text-[#ff9ea3]" href="#products" aria-label="View Watermelon"></a>
+                </article>
+                <article class="group relative flex min-w-0 flex-col overflow-hidden rounded-[2rem] bg-[#f7f7d3] p-6 pb-20 text-[#9a5600]">
+                    <h3 class="relative z-10 text-3xl font-semibold tracking-tight xl:text-4xl">Passion</h3>
+                    <img class="pointer-events-none absolute bottom-0 left-0 h-2/3 w-1/2 object-cover opacity-0 transition-opacity group-hover:opacity-100 max-xl:hidden" src="assets/img/Tile-Passion-Illustration.png" alt="">
+                    <p class="relative z-10 mt-4 max-w-[36ch] text-lg font-semibold">Tropical passion fruit with a bright, tangy finish. Sunshine in every sip.</p>
+                    <img class="relative z-10 mt-4 h-52 w-40 object-contain" src="assets/img/matelibre-can-passion_3d360783-e47a-4235-bc35-ab260a9a362a.png" alt="Passion fruit can">
+                    <a class="icon-right absolute right-4 bottom-4 z-10 inline-flex size-11 items-center justify-center rounded-full bg-[#ff9900] text-[#f7f7d3]" href="#products" aria-label="View Passion"></a>
+                </article>
+                <article class="group relative flex min-w-0 flex-col overflow-hidden rounded-[2rem] bg-[#def5de] p-6 pb-20 text-[#094d09] md:col-span-2 lg:col-span-1">
+                    <h3 class="relative z-10 text-3xl font-semibold tracking-tight xl:text-4xl">Mint &amp; Lime</h3>
+                    <img class="pointer-events-none absolute bottom-0 left-0 h-2/3 w-1/2 object-cover opacity-0 transition-opacity group-hover:opacity-100 max-xl:hidden" src="assets/img/Tile-Menthe_lime-Illustration.png" alt="">
+                    <p class="relative z-10 mt-4 max-w-[36ch] text-lg font-semibold">Cool mint and sharp lime for a clean, refreshing lift. Freshness in every sip!</p>
+                    <img class="relative z-10 mt-4 h-52 w-40 object-contain" src="assets/img/matelibre-can-menthe-lime_910b0663-93f8-40f2-b896-05345d5ad832.png" alt="Mint and lime can">
+                    <a class="icon-right absolute right-4 bottom-4 z-10 inline-flex size-11 items-center justify-center rounded-full bg-[#094d09] text-[#def5de]" href="#products" aria-label="View Mint and Lime"></a>
+                </article>
             </div>
-            <div class="txt">
-                <h3 id="h3">The benefits of</h3>
-                <h4 id="h4">yerba maté?</h4>
             </div>
-            <section class="art">
+
+            <div class="mt-14 overflow-hidden sm:mt-20" aria-hidden="true">
+                <div class="marquee-track flex w-max motion-safe:animate-marquee">
+                    <span class="pr-12 text-[clamp(2.25rem,7vw,4.5rem)] font-semibold tracking-tight whitespace-nowrap">energy infusions</span>
+                    <span class="pr-12 text-[clamp(2.25rem,7vw,4.5rem)] font-semibold tracking-tight whitespace-nowrap text-neutral-500">60 mg of caffeine</span>
+                    <span class="pr-12 text-[clamp(2.25rem,7vw,4.5rem)] font-semibold tracking-tight whitespace-nowrap">awakens the mind</span>
+                    <span class="pr-12 text-[clamp(2.25rem,7vw,4.5rem)] font-semibold tracking-tight whitespace-nowrap text-neutral-500">no crash</span>
+                    <span class="pr-12 text-[clamp(2.25rem,7vw,4.5rem)] font-semibold tracking-tight whitespace-nowrap">energy infusions</span>
+                    <span class="pr-12 text-[clamp(2.25rem,7vw,4.5rem)] font-semibold tracking-tight whitespace-nowrap text-neutral-500">60 mg of caffeine</span>
+                    <span class="pr-12 text-[clamp(2.25rem,7vw,4.5rem)] font-semibold tracking-tight whitespace-nowrap">awakens the mind</span>
+                    <span class="pr-12 text-[clamp(2.25rem,7vw,4.5rem)] font-semibold tracking-tight whitespace-nowrap text-neutral-500">no crash</span>
+                </div>
+            </div>
+
+            <div class="benefits-title mt-16 overflow-hidden px-4 text-center sm:mt-24" id="explore">
+                <h2 class="text-[clamp(2.25rem,6vw,4.5rem)] font-semibold leading-none tracking-tight text-neutral-500">The benefits of</h2>
+                <p class="text-[clamp(2.25rem,6vw,4.5rem)] font-semibold leading-none tracking-tight">yerba maté?</p>
+            </div>
+            <div class="mx-auto mt-8 mb-16 grid w-[min(28rem,calc(100%-2rem))] gap-9 lg:mb-24">
                 <article>
-                    <span class="icon-flash-outline"></span>
-                    <h5>Stimulates your mind</h5>
-                    <p>Put your brain in focus mode: yerba mate infusion can help stimulate brain activity thanks to the
-                        natural presence of polyphenols. The end of your sessions will be much more productive. [1] [2]
-                        [3]</p>
+                    <span class="icon-flash-outline text-4xl" aria-hidden="true"></span>
+                    <h3 class="my-2.5 text-2xl font-semibold tracking-tight sm:text-3xl">Stimulates your mind</h3>
+                    <p class="text-[17px] leading-relaxed">Put your brain in focus mode: yerba mate infusion can help stimulate brain activity thanks to the natural presence of polyphenols. The end of your sessions will be much more productive. [1] [2] [3]</p>
                 </article>
                 <article>
-                    <span class="icon-lkdto"></span>
-                    <h5>No crash</h5>
-                    <p>Prolonged, better-controlled energy without palpitations thanks to yerba mate. The natural
-                        combination of caffeine and theobromine in yerba mate infusion helps regulate energy. Bye bye
-                        coffee down! [4] [5]</p>
+                    <span class="icon-lkdto text-4xl" aria-hidden="true"></span>
+                    <h3 class="my-2.5 text-2xl font-semibold tracking-tight sm:text-3xl">No crash</h3>
+                    <p class="text-[17px] leading-relaxed">Prolonged, better-controlled energy without palpitations thanks to yerba mate. The natural combination of caffeine and theobromine in yerba mate infusion helps regulate energy. Bye bye coffee down! [4] [5]</p>
                 </article>
                 <article>
-                    <span class="icon-pagelines"></span>
-                    <h5>Sport & Recovery</h5>
-                    <p>Whether it's for sport or after a night out, we've got you covered! Yerba mate's naturally
-                        occurring caffeine could improve exercise performance and recovery. [3] [6]</p>
+                    <span class="icon-pagelines text-4xl" aria-hidden="true"></span>
+                    <h3 class="my-2.5 text-2xl font-semibold tracking-tight sm:text-3xl">Sport &amp; Recovery</h3>
+                    <p class="text-[17px] leading-relaxed">Whether it's for sport or after a night out, we've got you covered! Yerba mate's naturally occurring caffeine could improve exercise performance and recovery. [3] [6]</p>
                 </article>
-            </section>
-            <figure class="img">
-                <img id="img" src="assets/img/Yerba_20studio_20tree.jpg" alt="">
-                <figcaption id="fig">Mate libre is made from an infusion of yerba mate, a tree of South American origin.
-                    A superfood with multiple benefits.
-                    <a href="">Discover yerba mate</a>
-                </figcaption>
-            </figure>
+            </div>
+
+            <div class="feature-pin h-[240vh]">
+                <figure class="feature sticky top-0 h-svh overflow-hidden bg-white">
+                    <img class="h-full w-full origin-center object-cover" src="assets/img/Yerba_20studio_20tree.jpg" alt="Yerba mate tree in the studio">
+                    <figcaption class="pointer-events-none absolute top-8 right-4 left-4 flex max-w-3xl flex-col items-start gap-4 text-xl font-semibold tracking-tight text-white sm:top-16 sm:left-[clamp(1.5rem,6vw,5.5rem)] sm:w-[min(42rem,62%)] sm:text-[clamp(1.75rem,3.5vw,3.25rem)]">
+                        Mate libre is made from an infusion of yerba mate, a tree of South American origin. A superfood with multiple benefits.
+                        <a class="inline-flex min-h-[52px] items-center justify-center rounded-full bg-white px-6 text-lg font-semibold text-black transition-colors hover:bg-black hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black" href="#explore">Discover yerba mate</a>
+                    </figcaption>
+                </figure>
+            </div>
         </section>
-        <section id="third">
-            <section class="one">
+
+        <section class="story relative z-10 bg-white" id="third">
+            <section class="mx-auto grid w-full max-w-6xl items-center gap-7 px-4 pt-12 sm:px-6 lg:grid-cols-2 lg:gap-12 lg:pt-20">
                 <figure>
-                    <img src="assets/img/home-02.jpg" alt="">
-                </figure>
-                <div class="texti">
-                    <h2>Committed from our raw material to packaging.</h2>
-                    <p>We're not perfect, but we're committed to making an environmental and social difference as best
-                        we can. Our carbon-neutral delivery is just one way to work towards making a positive impact
-                        because it has never been more important.</p>
-                    <div>
-                        <span class="icon-envira"></span>
-                        <h4>Carbon-free delivery in Greater Montreal</h4>
-                    </div>
-                    <div>
-                        <span class="icon-heart"></span>
-                        <h4>Fair trade yerba mate</h4>
-                    </div>
-                    <div>
-                        <span class="icon-pagelines"></span>
-                        <h4>Certified organic</h4>
-                    </div>
-                    <button>Discover our commitments</button>
-                </div>
-            </section>
-            <section class="tow">
-                <figure>
-                    <img src="assets/img/hero-home-03.jpg" alt="">
+                    <img class="h-80 w-full rounded-3xl object-cover lg:h-full lg:min-h-[640px]" src="assets/img/home-02.jpg" alt="Hands holding a Mate Libre can in a forest">
                 </figure>
                 <div>
-                    <p>،،</p>
-                    <h6>Our vision extends beyond mere “mate” sales. We aspire to give individuals the energy to feel
-                        free. Through our mission, to support artists, athletes, communities, and all who embody the
-                        essence of Canada’s DNA.</h6>
-                    <span>Edouard</span>
+                    <h2 class="text-[clamp(2rem,4vw,3.15rem)] font-semibold leading-tight tracking-tight text-balance">Committed from our raw material to packaging.</h2>
+                    <p class="mt-4 text-lg leading-relaxed">We're not perfect, but we're committed to making an environmental and social difference as best we can. Our carbon-neutral delivery is just one way to work towards making a positive impact because it has never been more important.</p>
+                    <ul class="mt-6 mb-7 grid gap-4">
+                        <li class="flex items-center gap-2.5 text-lg font-semibold"><span class="icon-envira text-2xl" aria-hidden="true"></span> Carbon-free delivery in Greater Montreal</li>
+                        <li class="flex items-center gap-2.5 text-lg font-semibold"><span class="icon-heart text-2xl" aria-hidden="true"></span> Fair trade yerba mate</li>
+                        <li class="flex items-center gap-2.5 text-lg font-semibold"><span class="icon-pagelines text-2xl" aria-hidden="true"></span> Certified organic</li>
+                    </ul>
+                    <button class="inline-flex min-h-[52px] w-full items-center justify-center rounded-full border-2 border-black bg-black px-6 text-lg font-semibold text-white transition-colors hover:bg-white hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black sm:w-auto" type="button">Discover our commitments</button>
                 </div>
             </section>
-            <section class="three">
+
+            <section class="mx-auto mt-14 grid w-full max-w-6xl gap-0 px-4 sm:px-6 lg:mt-24 lg:max-w-7xl lg:grid-cols-[1.25fr_0.9fr] lg:items-stretch lg:px-0" aria-label="Founder quote">
                 <figure>
-                    <img src="assets/img/What_does_yerba_Mate_taste_like.jpg" alt="">
-                    <figcaption><a href="">What Does Yerba Mate Taste Like?</a></figcaption>
-                    <span>August 8, 2024</span>
-
+                    <img class="h-80 w-full rounded-[28px] object-cover lg:h-full lg:min-h-[520px] lg:rounded-l-[30px] lg:rounded-r-none" src="assets/img/hero-home-03.jpg" alt="Edouard outdoors">
                 </figure>
-                <section>
-                    <h6>Our community</h6>
-                    <button>see all articles</button>
-                    <div>
-                        <figure>
-                            <img src="assets/img/Mate_Libre_Yerba_Mate_Flavours.jpg" alt="">
-                            <figcaption><a href="">Mate Libre's different Yerba Mate Flavors</a></figcaption>
-                            <span>August 8, 2024</span>
+                <blockquote class="-mt-7 rounded-[28px] bg-[#f0eded] px-6 py-7 lg:my-12 lg:-ml-14 lg:mt-12 lg:rounded-[30px] lg:px-14 lg:py-12">
+                    <p class="text-6xl leading-none" aria-hidden="true">“</p>
+                    <p class="mt-3 mb-5 text-[clamp(1.25rem,2.5vw,1.85rem)] font-semibold leading-snug tracking-tight">Our vision extends beyond mere “mate” sales. We aspire to give individuals the energy to feel free. Through our mission, to support artists, athletes, communities, and all who embody the essence of Canada’s DNA.</p>
+                    <footer class="text-lg">Edouard</footer>
+                </blockquote>
+            </section>
 
-                        </figure>
-                        <figure>
-                            <img src="assets/img/DSC06452-3_1.jpg" alt="">
-                            <figcaption><a href="">Mate mule</a></figcaption>
-                            <span>September1, 2023</span>
-                        </figure>
+            <section class="mx-auto mt-14 grid w-full max-w-6xl gap-6 px-4 sm:px-6 lg:mt-24 lg:grid-cols-[1.15fr_0.85fr] lg:items-stretch" id="community">
+                <article>
+                    <a class="group block text-inherit" href="#community">
+                        <span class="block overflow-hidden rounded-3xl">
+                            <img class="h-72 w-full object-cover transition duration-500 group-hover:scale-105 lg:h-[min(72vh,760px)]" src="assets/img/What_does_yerba_Mate_taste_like.jpg" alt="A cup of yerba mate">
+                        </span>
+                        <h3 class="mt-3 text-2xl font-semibold tracking-tight">What Does Yerba Mate Taste Like?</h3>
+                    </a>
+                    <time class="mt-1.5 block text-neutral-600" datetime="2024-08-08">August 8, 2024</time>
+                </article>
+                <div class="flex flex-col">
+                    <div class="flex flex-wrap items-center justify-between gap-3">
+                        <h2 class="text-[clamp(2rem,4vw,2.6rem)] font-semibold tracking-tight">Our community</h2>
+                        <button class="inline-flex min-h-10 items-center justify-center rounded-full border-2 border-black bg-black px-4 text-base font-semibold text-white transition-colors hover:bg-white hover:text-black" type="button">see all articles</button>
                     </div>
-                </section>
+                    <div class="mt-5 grid gap-4 sm:grid-cols-2 lg:mt-auto">
+                        <article>
+                            <a class="group block text-inherit" href="#community">
+                                <span class="block overflow-hidden rounded-3xl">
+                                    <img class="h-52 w-full object-cover transition duration-500 group-hover:scale-105" src="assets/img/Mate_Libre_Yerba_Mate_Flavours.jpg" alt="Mate Libre flavour lineup">
+                                </span>
+                                <h3 class="mt-2.5 text-lg font-semibold tracking-tight">Mate Libre's different Yerba Mate Flavors</h3>
+                            </a>
+                            <time class="mt-1.5 block text-neutral-600" datetime="2024-08-08">August 8, 2024</time>
+                        </article>
+                        <article>
+                            <a class="group block text-inherit" href="#community">
+                                <span class="block overflow-hidden rounded-3xl">
+                                    <img class="h-52 w-full object-cover transition duration-500 group-hover:scale-105" src="assets/img/DSC06452-3_1.jpg" alt="Mate mule cocktail">
+                                </span>
+                                <h3 class="mt-2.5 text-lg font-semibold tracking-tight">Mate mule</h3>
+                            </a>
+                            <time class="mt-1.5 block text-neutral-600" datetime="2023-09-01">September 1, 2023</time>
+                        </article>
+                    </div>
+                </div>
             </section>
-            <section class="four">
-                <section class="avali">
-                    <div>
-                        <h5>Subscribe to our newsletter and receive 10$ off your first subscription order.</h5>
-                        <input type="email" name="" id="" placeholder="your email">
-                        <button class="icon-right"></button>
+
+            <section class="mx-auto mt-14 w-full max-w-6xl px-4 sm:px-6 lg:mt-28">
+                <div class="grid gap-4 md:grid-cols-2">
+                    <div class="rounded-[2rem] bg-[#f0eded] p-7 sm:p-9">
+                        <h2 class="mb-7 max-w-[16ch] text-2xl font-semibold tracking-tight">Subscribe to our newsletter and receive 10$ off your first subscription order.</h2>
+                        <form class="subscribe flex items-center gap-2">
+                            <label class="sr-only" for="email">Email</label>
+                            <input class="h-[52px] min-w-0 flex-1 rounded-full border-2 border-black bg-white px-4 text-base outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black" id="email" type="email" name="email" placeholder="your email" autocomplete="email" required>
+                            <button class="icon-right inline-flex size-[52px] shrink-0 items-center justify-center rounded-full border-0 bg-black text-lg text-white" type="submit" aria-label="Subscribe"></button>
+                        </form>
                     </div>
-                    <div>
-                        <h5>Follow us on our social networks</h5>
-                        <a href="">instagram</a>
-                        <a href="">facebook</a>
-                        <a href="">tiktok</a>
+                    <div class="rounded-[2rem] bg-[#f0eded] p-7 sm:p-9">
+                        <h2 class="mb-7 max-w-[16ch] text-2xl font-semibold tracking-tight">Follow us on our social networks</h2>
+                        <div class="flex flex-col items-start gap-3">
+                            <a class="text-xl font-semibold text-black capitalize hover:underline" href="#" data-placeholder>instagram</a>
+                            <a class="text-xl font-semibold text-black capitalize hover:underline" href="#" data-placeholder>facebook</a>
+                            <a class="text-xl font-semibold text-black capitalize hover:underline" href="#" data-placeholder>tiktok</a>
+                        </div>
                     </div>
-                </section>
-                <section class="dovomi">
-                    <h4>products<br>explore<br>community</h4>
-                    <nav>
-                        <ul>
-                            <li><a href="">about us</a></li>
-                            <li><a href="">retailers</a></li>
-                            <li><a href="">wholesale</a></li>
-                            <li><a href="">faq</a></li>
-                            <li><a href="">contact</a></li>
-                        </ul>
+                </div>
+                <div class="grid grid-cols-2 gap-x-6 gap-y-8 px-2 py-12 lg:grid-cols-3">
+                    <p class="col-span-2 text-3xl font-bold leading-tight tracking-tight capitalize lg:col-span-1">products<br>explore<br>community</p>
+                    <nav class="flex flex-col gap-2.5" aria-label="Company">
+                        <a class="text-xl font-semibold text-black capitalize hover:underline" href="#explore">about us</a>
+                        <a class="text-xl font-semibold text-black capitalize hover:underline" href="#" data-placeholder>retailers</a>
+                        <a class="text-xl font-semibold text-black capitalize hover:underline" href="#" data-placeholder>wholesale</a>
+                        <a class="text-xl font-semibold text-black capitalize hover:underline" href="#" data-placeholder>faq</a>
+                        <a class="text-xl font-semibold text-black capitalize hover:underline" href="#" data-placeholder>contact</a>
                     </nav>
-                    <nav>
-                        <ul>
-                            <li><a href="">login</a></li>
-                            <li><a href="">card</a></li>
-                            <li><a href="">francais</a></li>
-                        </ul>
+                    <nav class="flex flex-col gap-2.5" aria-label="Account">
+                        <a class="text-xl font-semibold text-black capitalize hover:underline" href="#" data-placeholder>login</a>
+                        <a class="text-xl font-semibold text-black capitalize hover:underline" href="#" data-placeholder>cart</a>
+                        <a class="text-xl font-semibold text-black capitalize hover:underline" href="#" data-placeholder>français</a>
                     </nav>
-                </section>
+                </div>
             </section>
-            <section class="footer">
-                <h2>2025 | coded by Helia Rezaie</h2>
-                <nav>
-                    <a href="http://milto:h.rezaie2479@gmail.com" target="_blank"><span
-                            class="icon-mail hover:text-white"></span></a>
-                    <a href="http://linkdin.com/in/helia-rezaie-web" target="_blank"><span
-                            class="icon-linkedin hover:text-white"></span></a>
-                    <a href="http://www.instagram.com/helia.web" target="_blank"><span
-                            class="icon-instagram hover:text-white"></span></a>
-                    <a href="https://github.com/Helia-rz79" target="_blank"><span
-                            class="i icon-github-circled-alt2 hover:text-white"></span></a>
+
+            <footer class="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 bg-[#dbd9d9] px-4 py-4 text-center">
+                <p>2025 | coded by Helia Rezaie</p>
+                <nav class="flex gap-3" aria-label="Helia Rezaie">
+                    <a class="text-xl text-black hover:text-white" href="mailto:h.rezaie2479@gmail.com" aria-label="Email"><span class="icon-mail"></span></a>
+                    <a class="text-xl text-black hover:text-white" href="https://www.linkedin.com/in/helia-rezaie-web" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><span class="icon-linkedin"></span></a>
+                    <a class="text-xl text-black hover:text-white" href="https://www.instagram.com/helia.web" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><span class="icon-instagram"></span></a>
+                    <a class="text-xl text-black hover:text-white" href="https://github.com/Helia-rz79" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><span class="icon-github-circled-alt2"></span></a>
                 </nav>
-            </section>
+            </footer>
         </section>
     </main>
+    <script src="assets/js/main.js" defer></script>
 </body>
-
-
-<script>
-    const second = document.querySelector('#second')
-    const box = document.querySelector('#box')
-    const third = document.querySelector('#third')
-    const h3 = document.querySelector('.txt>#h3')
-    const h4 = document.querySelector('.txt>#h4')
-    const _img = document.querySelector('.img>#img')
-    const fig = document.querySelector('.img>#fig')
-    const _imgBox = document.querySelector('.img')
-
-
-
-    window.addEventListener('scroll', () => {
-        let st = parseInt(window.scrollY)
-        console.log(st);
-
-
-        if (st < 700) {
-            second.style.top = ((1100 - (st)) / 10) + '%'
-            box.style.transform = 'translateX(' + ((st - 550)) + 'px )'
-        } else if (st > 1000 && st < 3200) {
-            if (st < 1500) {
-                h3.style.transform = 'translateX(' + ((st - 600) / 2) + 'px )'
-                h4.style.transform = 'translateX(' + ((2500 - st) / 2) + 'px )'
-
-            } else if (st > 2000 && st < 2800) {
-                _img.style.width = ((st - 1790) / 10) + '%'
-                _img.style.height = ((st - 1790) / 10) + '%'
-                _img.style.clipPath = 'inset(0 0 0 0)'
-                _imgBox.style.position = 'relative'
-                fig.style.opacity = '0'
-
-            } else if (st > 2800 && st < 3200) {
-                _imgBox.style.position = 'fixed'
-                _imgBox.style.left = '0'
-                _imgBox.style.top = '0'
-                _img.style.width = '100%'
-                _img.style.height = '100%'
-                fig.style.opacity = '1'
-            }
-            third.style.top = '100vh'
-
-        } else if (st > 3200 && st < 3600) {
-            third.style.top = '0px'
-        
-        } else if(st>3700 && st<3900){
-            third.style.top = '-100vh'
-
-        }else if(st>3900 && st<4200){
-            third.style.top = '-200vh'
-        }else if(st>4200 && st<4300){
-            third.style.top = '-315vh'
-        }
-    })
-</script>
 
 </html>
