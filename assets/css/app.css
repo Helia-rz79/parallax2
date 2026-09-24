@@ -26,6 +26,10 @@
     }
 }
 
+html {
+    overflow-x: clip;
+}
+
 @media (prefers-reduced-motion: no-preference) {
     .feature img {
         transform: scale(0.16);
